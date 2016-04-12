@@ -1,0 +1,657 @@
+@import"partials/buttons";
+@import"partials/var";
+@import"partials/layouts";
+@import"partials/mixins";
+@import"partials/base";
+
+.page-panel-orders-edit{
+
+    .panel{
+        border-radius: 0px !important;
+    }
+    .panel-heading {
+        padding: 10px 0px;
+    border-radius: 0px;
+    }
+    .panel-footer {
+    padding: 4px 15px;
+
+}
+    .panel-footer .btn {
+        font-weight: 100;
+
+    }
+
+    .nav .btn{
+        margin: 5px 0 0px 0;
+    }
+    .btnright .btn{
+       peddind-left:2px;
+    }
+    .panel-heading .nav {
+    margin: 0px 0 0px 0;
+    background: #90a4ae;
+    height: 43px $i;
+    text-transform: uppercase;
+    border-radius: 0px;
+}
+
+
+
+   .row{
+        padding-right: 20px $i;
+    }
+    .btn-default .fa {
+    color:#333333;
+}
+    .btn i {
+        margin-right: 0px;
+    }
+
+    @include page-title-plus();
+    @include nav-panel();
+
+
+        @include page-title();
+        form{
+            margin-bottom:0px;
+            }
+    /*  SEARCH field  */
+
+
+        @include focus-placeholder-up($class:".form-group input", $label:"H4");
+
+@include left-panel-nice();
+
+    /*  SELECT field  */
+
+
+
+    .panel-footer{
+        .pagination .active a{
+            background:$main_col1 $i;
+            }
+        }
+    }
+.page-panel-inventories{
+    .panel-heading{
+        padding-bottom: 12px;
+        .col-lg-7,
+        .col-lg-8,
+        .col-lg-9,
+        .col-lg-10,
+        .col-lg-11{
+            padding-right: 0px $i;
+            }
+        .col-lg-1,
+        .col-lg-2,
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-5{
+            padding-left: 0px $i;
+            padding-right: 3px $i;
+            }
+        .col-md-12,
+        .col-sm-12,
+        .col-xs-12{
+            padding-left: 5px $i;
+            }
+        @include page-title();
+        form{
+            margin-bottom:0px;
+            }
+    /*  SEARCH field  */
+        .form-group{
+            margin: 25px 0 0px 0;
+            }
+        .form-group a,
+        .form-group input{
+            border-bottom: 1px solid $accent_col;
+            border-radius:0;
+            }
+        .form-group .form-control{
+            width:130px;
+            margin-left:20px;
+            font-size:$input_size;
+            }
+        .form-group select{
+            font-size:$input_size;
+            }
+        .form-group input:focus{
+            border-bottom:1px solid $accent_col;
+            }
+        @include focus-placeholder-up($class:".form-group input", $label:"H4");
+
+
+        .dropdown-toggle{
+            margin: 33px 15px 0 0px $i;
+
+            }
+        .dropdown-toggle:active{
+            background: $trans $i;
+            }
+        .btn-success{
+            @include btn-flat-icon();
+           margin-top: 30px;
+             &:hover i,
+            &:active i{
+                color: $accent_col $i;
+            }
+        }
+    /*  SELECT field  */
+        .btn-primary{
+            @include btn-flat-icon();
+            margin: 33px 3px 0 0;
+            }
+        .btn-header-main{  /* - added class ----*/
+           @include btn-raised-accent();
+            margin-top: 33px;
+            height: 24px;
+             font-size: $btn_icon_size;
+            padding: 5px;
+            .fa-caret-down{
+                padding-left: 0px;
+                padding-right: 0px;
+                margin-top: -5px;
+            }
+
+            }
+        }
+
+    .panel-footer{
+        .pagination .active a{
+            background:$main_col1 $i;
+            }
+        }
+    }
+.page-products-edit{
+    min-width: 390px $i;
+    .panel.block .panel-heading {
+        border-radius: 5px 5px 0 0;
+        }
+
+    @include page-title-plus();
+    @include nav-panel();
+    .edit_product{
+        .row{
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid $main_col-5;
+            }
+       .col-md-3 {
+             padding-left: 0px;
+            padding-right: 0px;
+        }
+        .col-md-2 {
+             width:5%;
+        }
+        .col-md-5 {
+             width:50%;
+        }
+        .col-md-4 {
+             width:40%;
+        }
+        .col-md-1 {
+             width:2%;
+        }
+        .wrapper-md{
+
+            border: 2px solid $main_col-5;
+            margin: -25px 0px 0 10px;
+             padding-bottom: 7px;
+             padding-top: 4px;
+            }
+        .column-title{
+            padding: 0px 0 10px 0px;
+            width: 80%;
+            float: left;
+            font-size:$menu_size_sm;
+            font-weight:500;
+            margin:0 0 0 80px;
+            color:$text_col;
+            }
+        .btn{
+            margin:-75px 10px 0px 0px;
+            padding: 7px 9px 7px 9px;
+            }
+        .btn:hover{
+            box-shadow:1px 1px 5px 0 $main_col2;
+            transition:0.5s ease-in-out;
+            }
+        .btn i{
+            font-size:$btn_icon_size ;
+            padding: 0px 0px 0px 0px;
+            margin: 0px 0px 0px 0px;
+            }
+        .col-xs-12{
+            padding-bottom: 0px;
+             padding-top:12px;
+        }
+        .btn-success{
+            @include btn-raised-accent();
+            }
+        .btn-primary{
+            background: $trans;
+            border:none;
+            color:$white;
+            font-size: $btn_text_size;
+             font-weight: 400;
+            }
+        .btn-primary:active{
+            background: $trans;
+            border:none;
+            color:$text_col;
+            }
+        .boolean {
+            font-size: $lable_size $i;
+           padding-top: 5px;
+             padding-bottom:2px;
+
+            }
+        @include input-nice(
+            $class:".form-group:not(.product_top):not(.product_non):not(.product_out):not(.product_alt)",
+            $padding:6px+$delta 5px 1px 0px,
+            $hover-weight:420
+            );
+        .col-md-3 .readonly{
+            opacity: 0.6;
+        }
+        .readonly div,
+        .readonly label,
+        .readonly input{
+            cursor:default;
+        }
+        .product_additional_1,
+        .product_additional_2,
+        .product_additional_3,
+        .product_additional_4,
+        .product_additional_5,
+        .product_additional_6,
+        .product_additional_7,
+        .product_additional_8,
+        .product_additional_9,
+        .product_additional_10{
+            .col-sm-3{
+                width:25%;
+                }
+            .col-sm-9{
+                width:65%;
+                }
+            }
+        }
+    @include checkbox-nice(
+        $class:".boolean .optional .col-sm-9",
+        $margin:3px 0 0 -14px,
+        $size:11px
+        );
+    }
+.page-panel-suppliers{
+    @include page-title-plus();
+    @include nav-panel();
+    .panel-body{
+        padding-top: 0px;
+    }
+    .tab-pane,
+    .tab-content,
+    form{
+        padding: 0 0 0 0;
+
+    }
+    form{
+       border-bottom: 2px solid $main_col-5;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        padding-bottom: 7px;
+        margin-bottom: 0px;
+    }
+
+    @include checkbox-nice(
+        $class:".checkbox-nice",
+        $margin:8px 0 0 15px $i,
+        $size:13px
+        );
+    .checkbox-nice{
+       margin:3px 5px 0 15px $i;
+        }
+    @include checkbox-nice(
+        $class:".boolean .optional .col-sm-9",
+        $margin:4px 0 0 -25px $i,
+        $size:13px
+        );
+    .boolean .optional .col-sm-9{
+        width: 0px;
+        height: 0px;
+        }
+     @include input-nice(
+        $class:".form-group",
+        $padding:6px+$delta 5px 1px 80px,
+        $hover-weight:420
+        );
+    .form-group .supplier_mail_content{
+         padding: 0px 0 0px 0px;
+    }
+
+    .form-group {
+        .col-sm-9{
+                width:60%;
+                }
+        .col-xs-4{
+            padding-left: 0px;
+        }
+        .supplier_currency,
+        .supplier_currency_manual_input,
+        .supplier_currency_rate{
+             padding: 0px 0px 0px 0px;
+
+
+            .checkbox{
+                padding: 0px 0px 0px 0px;
+            }
+        }}
+
+
+        .form-group {
+            label {
+                margin-bottom: 8px $i;
+
+            }
+        .supplier_by_main_email,
+        .supplier_by_scheduler_email,
+        .supplier_by_main_email .checkbox,
+        .supplier_by_scheduler_email .checkbox{
+            padding: 0px 0 5px 20px;
+            }
+            .supplier_currency_rate{
+               width: 300px;
+                 padding: 20px 10px 10px 10px;
+            }
+            .supplier_currency_manual_input{
+
+                 padding: 20px 0px 10px 60px;
+            }
+            .supplier_currency{
+               width: 300px;
+                 padding: 20px 60px 10px 0px;
+            }
+    }
+    .btn{
+             @include btn-flat($text-color:$text_col);
+            }
+    .btn-primary{
+             @include btn-raised-accent();
+            }
+
+    }
+
+@media (min-width: 1200px){
+    .col-lg-offset-3 {
+                margin-left: 5%;
+    }
+ .col-sm-offset-3 {
+        margin-left: 5%;
+    }}
+
+@media (min-width: 1600px){
+    .col-lg-offset-3 {
+                margin-left: 5%;
+            }
+   body{
+
+    .item-log-panel{
+        font-size: $info_size_l;
+    }
+    .item-log-panel i{
+        font-size:  $icon_size $i;
+    }
+    .left-panel {
+    a{
+        font-size:$menu_size_l;
+        }
+    .menu {
+        li{
+            ul,
+            ul li,
+            ul li a{
+                font-size:$menu_size;
+            }}}}}
+    .page-products-edit{
+        .panel-heading{
+            padding-bottom: 20px;
+            span{
+                margin: 19px+$delta_l 0 0px 20px $i;
+                font-size: $lable_size_l;
+                }
+            .page-title h1{
+                margin: 48px+$delta_l 0 0px 20px $i;
+                font-size: $title_size_l;
+                }
+            }
+
+        .panel-heading .nav {
+            margin:30px 0 0px 0;
+            height:42px;
+
+            :not(.active) a{
+                height:42px;
+                padding-top:7px;
+                  font-size:$menu_size_l;
+                }
+            .active a{
+                font-size:$menu_size_l;
+                height:42px;
+                padding-top:7px;
+                }
+            }
+
+        .form-group:not(.product_top):not(.product_non):not(.product_out):not(.product_alt){
+
+            .col-sm-8{
+                width:60%;
+                }
+           padding:15px+$delta_l 5px 1px 0px;
+            input, select{
+                    font-size:$input_size_l;
+                    }
+              label{
+                    font-size: $lable_size_l;
+                    padding:4px 0px 0px 0px;
+                    }
+
+            }
+         .btn{
+            margin:-90px 10px 0px 0px;
+            }
+        .btn-success{
+            font-size:  $btn_text_up_size_l;
+            margin:10px 10px 0px 0px;
+            }
+        .btn-primary{
+            font-size: $btn_text_size_l;
+            }
+        .boolean {
+            font-size: $lable_size_l $i;
+
+
+            }
+       .boolean .optional .col-sm-9 {
+
+              margin-right: 0px;
+               margin-left: -19px;
+
+
+            }
+        .boolean .optional .col-sm-9:before {
+
+          width: 15px;
+          height: 15px;
+
+        }
+        .boolean .optional .col-sm-9:after {
+
+          width: 15px;
+          height: 15px;
+
+        }
+        .boolean .optional .col-sm-9:checked:before {
+
+         top: 1px;
+            height: 9px;
+          border:2px solid $accent_col2;
+          border-top-style: none;
+          border-right-style: none;
+        }
+    }}
+@media (max-width: 968px){
+     .user-info{
+        margin: 0 0 0 50px;
+    }
+     .page-products-edit .edit_product{
+        .col-md-1 {
+             width:0%;
+        }
+        .col-md-4 {
+
+             width:100%;
+        }
+        .col-md-5 {
+
+             width:100%;
+        }
+        .wrapper-md {
+            margin: 20px 0 0 20px;
+            max-width: calc(100% - 40px);
+            }
+
+
+    }}
+@media (max-width: 768px){
+
+
+    .work-area .page-title .btn-left-menu{
+         margin-top: 0px;
+        }
+    .work-area .page-title .btn-left-menu i{
+        color:$main_col-2 ;
+        }
+    .work-area .page-title .btn-left-menu i:hover{
+        color:$main_col-1 ;
+        }
+    .closed-panel .work-area{
+        margin-left: -80px;
+        max-width: calc(100% - 10px);
+        left: 0;
+        padding-bottom: 92px;
+        transition: left 0.5s linear;
+        margin-right: 0;
+        transition:all 0.4s;
+        }
+    .open-left-menu-mob .work-area{
+        margin-left: 20px;
+        transition:all 0.4s;
+        left: 0px $i;
+        transition:all 0.4s;
+        }
+    .form-group{
+        padding:15px 10px 0px 10px ;
+        }
+    .page-products-edit .edit_product{
+
+        .wrapper-md {
+            margin: 20px 0 0 20px;
+            max-width: calc(100% - 40px);
+            }
+        .btn {
+            margin: -30px 10px 0px 0px;
+            padding: 7px 9px 7px 9px;
+            }
+        .btn-primary{
+                color:$text_col;
+            }
+
+         .form-group:not(.product_top):not(.product_non):not(.product_out):not(.product_alt){
+             label{
+            font-size:$menu_size_xsm;
+            font-weight:400;
+            color:$text_col2;
+            padding:3px 0px 0px 0px;}
+        }
+        .btn-success {
+            margin: 0px 0px 0px 0px;
+
+            }
+    }
+
+
+    .menu::-webkit-scrollbar {
+            width: 5px !important;
+            border-bottom:2px solid $main_col;
+            }
+    }
+@media (max-width: 375px){
+    .work-area {
+        margin-left: -240px;
+        max-width: calc(100% - 20px);
+        left: 0;
+        padding-bottom: 92px;
+        transition: left 0.5s linear;
+        margin-right: 0;
+        transition:all 0.9s;
+        }
+    .open-left-menu-mob .work-area{
+        left: 0px $i;
+        transition:all 0.4s;
+        }
+    .form-group{
+        padding:15px 10px 0px 10px ;
+        }
+    .page-products-edit .edit_product{
+        .wrapper-md {
+            margin: 20px 0 0 20px;
+            max-width: calc(100% - 40px);
+            }
+        .btn {
+            margin: -30px 10px 0px 0px;
+            padding: 7px 9px 7px 9px;
+            }
+                     .btn-success {
+            margin: 0px 0px 0px 0px;
+
+            }
+
+        }
+    }
+@media (max-width: 320px){
+    .work-area {
+       margin-left: -240px;
+        max-width: calc(100% - 80px);
+        left: 0;
+        padding-bottom: 92px;
+        transition: left 0.5s linear;
+        margin-right: 0;
+        transition:all 0.4s;
+    }
+    .open-left-menu-mob .work-area{
+       left: 0px $i;
+        transition:all 0.4s;
+    }
+    .form-group{
+        padding:15px 10px 0px 10px ;
+    }
+    .page-products-edit .edit_product{
+        .wrapper-md {
+        margin: 20px 0 0 20px;
+            max-width: calc(100% - 40px);
+            transition:all 0.4s;
+        }
+        .btn {
+            margin: -30px 10px 0px 0px;
+            padding: 7px 9px 7px 9px;
+            }
+             .btn-success {
+            margin: 10px 0px 0px 0px;
+
+            }
+        }
+    }
+

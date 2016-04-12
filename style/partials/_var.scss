@@ -1,0 +1,54 @@
+/* Var */
+    /* Colors */
+        $main_col:#607D8B;
+        $main_col_light:#CFD8DC;
+        $main_col1:#56707d;
+        $main_col2:#4c646f;
+        $main_col-1:#78909c;
+        $main_col-2:#90a4ae;
+
+        $main_col5: #455A64;
+        $main_col5-opacity:  rgba(69,90,100, 0.4);
+        $main_col-5:#EDF1F4;
+        $main_col-10:#F7F9FA;
+
+        $white:#FFFFFF;
+        $trans:transparent;
+        $text_col:#212121;
+        $text_col2:#727272;
+        $divider:#B6B6B6;
+        $divider-1:#e7e7e7;
+
+        $accent_col:#FF9800;
+        $accent_col-1:#ffa014;
+        $accent_col2:#3CBC8D;
+    $i:!important;
+    $shadow-large:  0 1px 3px rgba(0,0,0,0.16), 0 1px 2px rgba(0,0,0,0.24);
+    $shadow-small: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    $shadow-small-inset: inset -1px 1px 4px 0px $divider;
+    /* Size */
+       $delta:0px;
+        $delta_l:1px;
+        $title_size_l:22px+$delta_l;
+        $title_size:18px+$delta;
+
+        $menu_size_l:17px+$delta_l;
+        $menu_size:15px+$delta;
+        $menu_size_sm:13px+$delta;
+        $menu_size_xsm:11px+$delta;
+
+        $lable_size_l:17px+$delta_l;
+        $lable_size:13px+$delta;
+        $input_size_l:17px+$delta_l;
+        $input_size:13px+$delta;
+        $input_size_sm:11px+$delta;
+        $info_size_l:13px+$delta_l;
+        $info_size:10px+$delta;
+
+        $icon_size_sm:16px+$delta;
+        $icon_size:27px+$delta;
+        $btn_icon_size:16px+$delta;
+        $btn_text_up_size:12px+$delta;
+        $btn_text_size:13px+$delta;
+        $btn_text_up_size_l:14px+$delta_l;
+        $btn_text_size_l:16px+$delta_l;

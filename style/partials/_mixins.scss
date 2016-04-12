@@ -1,0 +1,503 @@
+
+//Elements
+@mixin checkbox-nice($class, $margin, $size){
+    #{$class} {
+        position: relative;
+        top: 0px;
+        margin: $margin;
+        cursor: pointer;
+        }
+
+    #{$class}:before {
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          content: "";
+          position: absolute;
+          left: 0;
+          z-index: 1;
+          width: $size;
+          height: $size;
+          border: 1px solid $divider;
+
+        }
+    #{$class}:checked:before {
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+         top: 1px;
+            height: 7px;
+          border:2px solid $accent_col2;
+          border-top-style: none;
+          border-right-style: none;
+        }
+    #{$class}::after {
+      content: "";
+      position: absolute;
+      top: -0.125rem;
+      left: 0;
+      width: 12px;
+      height: 14px;
+      background: $white;
+      cursor: pointer;
+        border: none;
+
+}
+}
+@mixin focus-placeholder-up($class,$label){
+     #{$class}:focus ~ #{$label}{
+            margin:-40px 0 0 20px;
+            font-size:$info_size;
+            color:  $accent_col;
+            transition-duration:.4s;
+            }
+    #{$label}{ /* - placeholder ----*/
+            position:absolute;
+            display:block;
+            color: $trans;
+            margin:-27px 0 0 15px;
+            font-size:$info_size;
+           }
+}
+@mixin btn-flat($text-color){
+            background: $trans;
+            border:none;
+            font-size:  $btn_text_up_size;
+            font-weight: 500;
+           padding: 6px 13px;
+            margin: 0 5px 0 0;
+            color: $text-color;
+        text-transform: uppercase;
+    margin-left: 5px;
+    &:hover{
+        cursor:pointer $i;
+
+        transition: .4s;
+        background: $divider-1;
+    }
+    &:active{
+       box-shadow: $shadow-small-inset;
+        transition: .4s;
+         background: $divider-1;
+         color: $text-color;
+    }
+}
+@mixin btn-flat-icon(){
+            background: $trans;
+            border:none;
+            font-size:  $btn_text_up_size;
+            font-weight: 500;
+            padding: 6px 13px;
+            margin: 0 5px 0 0;
+            color: $main_col1 $i;
+            margin-left: 5px;
+    i,
+    span{
+        font-size: $btn_icon_size;
+        margin: 0 0px 0 0;
+         padding: 0 3px 0 3px;
+        color: $main_col1 $i;
+
+    }
+
+    &:hover{
+        background: $trans;
+         box-shadow: $shadow-small;
+        i{
+        cursor:pointer $i;
+        color: $accent_col;
+        background: $trans;
+        transition: .4s;
+    }
+    }
+    &:active{
+       box-shadow: $shadow-small-inset;
+         background: $divider-1;
+        i{
+        cursor:pointer $i;
+        color: $accent_col;
+        background: $trans;
+            transition: .4s;}
+    }
+}
+@mixin btn-success-nice(){
+            background: $accent_col $i;
+            border:none;
+            margin: 0 5px 0 0;
+            font-size:  $btn_text_up_size;
+            font-weight: 400;
+            padding: 6px 13px;
+    border-radius: 3px;
+     &:hover{
+        cursor:pointer $i;
+       box-shadow: $shadow-small;
+        transition: .4s;
+    }
+}
+@mixin btn-raised-accent(){
+            background: $accent_col $i;
+            border:none;
+            margin: 0 5px 0 0;
+            font-size:  $btn_text_up_size;
+            font-weight: 500;
+            padding: 6px 13px;
+            color: $white;
+    box-shadow: $shadow-small;
+    text-transform:none;
+     border-radius: 3px $i;
+    i,
+    span{
+        font-size: $btn_icon_size;
+        margin: 0 0px 0 0;
+         padding: 0 3px 0 3px;
+        color: $white $i;
+    }
+     &:hover{
+         background: $accent_col $i;
+        cursor:pointer $i;
+       box-shadow: $shadow-small;
+        transition: .4s;
+         opacity: 0.9;
+         color: $white $i;
+
+
+    }
+    &:active{
+       box-shadow: $shadow-small-inset;
+        transition: .4s;
+         color: $white;
+        opacity: 0.8;
+
+    }
+}
+
+@mixin input-nice($class, $padding, $hover-weight){
+    #{$class}{
+            padding:$padding;
+            margin:0 0 0 0;
+            border: none;
+        &:hover label{
+            font-weight: $hover-weight;
+            color: $text_col;
+        }
+        &:hover input,
+        &:active input,
+        &:hover select{
+            font-weight: $hover-weight;
+            color: $text_col;
+        }
+        .col-sm-3{
+                width:20%;
+                }
+        .col-xs-3{
+                width:20%;
+                }
+
+        .col-sm-4{
+                width:20%;
+                }
+        .col-sm-6{
+                width:43%;
+                }
+            .col-sm-8{
+                width:70%;
+                }
+        .col-sm-9{
+                width:80%;
+                }
+        .col-sm-12{
+                width:90%;
+                }
+            .col-sm-5{
+                width:30%;
+                }
+
+            input,
+            select{
+                box-shadow:0 0 0 0;
+                border:none;
+                border-bottom:1px solid $main_col-5;
+                padding:0px 5px 0px 10px;
+                border-radius: 0px;
+                }
+             input::-webkit-input-placeholder {
+                color:$divider;
+                font-weight:400;
+                font-size:$input_size;
+                }
+            input, select{
+                font-size:$input_size;
+                font-weight:500;
+                color:$text_col2;
+                }
+            input:hover,
+            select:hover{
+                box-shadow:0px 0px 0 0 $accent_col;
+                }
+            input:focus,
+            select:focus{
+                box-shadow:0px 0px 0 0;
+                border-bottom:1px solid $trans;
+                }
+            span:after{
+                background: $accent_col;
+                content: '';
+                height: 1px;
+                position: absolute;
+                -webkit-transition: 0.2s ease all;
+                width: 0%;
+                }
+            input:focus~span:after{
+                background: $accent_col;
+                content: '';
+                border-bottom:1px;
+                height: 1px;
+                position: absolute;
+                -webkit-transition: 0.8s ease all;
+                width: 90%;
+                }
+
+            label{
+                font-size: $lable_size;
+                font-weight:400;
+                color:$text_col2;
+                padding:6px 0px 0px 0px;
+                }
+            textarea{
+                border: 1px solid $main_col-5;
+                }
+            textarea:focus{
+                border: none;
+                box-shadow: $shadow-small   ;
+
+            }
+                    }
+    }
+
+
+//Page parts
+@mixin page-title(){
+    .panel-heading{
+        border-radius: 3px $i;}
+    .page-title h1{
+                color:$text_col2 $i;
+                 margin: 10px 0 10px 40px $i;
+                font-weight:100 $i ;
+                font-size: $title_size;
+    }}
+@mixin page-title-plus(){
+
+    .panel-heading{
+        border-radius: 3px $i;
+        span{
+            color:$text_col2;
+            margin: 15px 0 0px 5px $i;
+            font-weight:400 $i ;
+            font-size: $lable_size;
+            float:left;
+
+            }
+         .page-title h1{
+            color:$text_col2 $i;
+            margin: 10px 0 0px 20px $i;
+            font-weight:100 $i ;
+            font-size: $title_size;
+              padding-bottom: 5px;
+            }
+
+        }
+    }
+@mixin left-panel-nice(){
+    .left-panel {
+        min-width:240px;
+        background-color:$main_col;
+        box-shadow:$shadow-large;
+
+        a{
+            color:$white $i;
+            font-size:$menu_size;
+            font-weight:500;
+            }
+        .handle{
+            background: $main_col $i;
+
+            }
+        .menu {
+            //max-height:78%;
+            padding:0 10px 10px 10px;
+            overflow-y:scroll;
+
+            li{
+                background:$main_col $i;
+
+                :hover{
+                    box-shadow: -1px 0px 0 0px $main_col1;
+                    background:$main_col $i;
+                    }
+                .first-level:hover{
+                    background:$main_col-1 $i;
+                    }
+                span{
+                    animation: open-menu-span 0.6s ease-out;
+                    }
+                ul li a{
+                    padding-left: 60px;
+                    }
+                ul,
+                ul li,
+                ul li a{
+                    background:$main_col-1 $i;
+                    font-size:$menu_size_sm;
+
+                    font-weight:500;
+                    }
+                ul li{
+                    width:100%;
+
+                    }
+                ul li:hover{
+
+                    }
+                i:hover{
+                    background:$main_col-1 $i;
+                    }
+                }
+            .active .first-level{
+
+
+                border-radius:0%;
+                background:$main_col $i;
+                border-left:1px solid $accent_col;
+                }
+
+           .active .open{
+
+
+                background:$main_col-2 $i;
+                border-left:none;
+                }
+
+            .active .active a{
+
+                box-shadow: inset 1px 1px 4px 0px $main_col5;
+
+                border-radius:0%;
+                background:$main_col $i;
+                border-left:1px solid $accent_col;
+                }
+
+            .open{
+
+                border-bottom:1px solid $main_col1;
+                background:$main_col-2 $i;
+                }
+            }
+        }
+    .closed-panel .left-panel{
+        .head-logo{
+            padding: 18px 0 27px 0;
+
+            img{
+                margin: 0px auto 15px;
+                }
+            }
+        .menu{
+            overflow:visible;
+            padding: 0px 7px 0px 7px;
+
+            li {
+                :hover{
+                    border-bottom:none;
+                    }
+                .active,
+                .active .first-level,
+                .open{
+                    border-bottom:none;
+                    }
+
+                span{
+                    width:0px $i;
+                    }
+                a{
+                    padding: 10px 0px 10px 0px;
+                    }
+                ul li a{
+                    padding-left: 0px;
+                    }
+                }
+            }
+        }
+    .menu::-webkit-scrollbar {
+        width: 15px !important;
+        border-bottom:2px solid $main_col;
+        }
+    .menu::-webkit-scrollbar-thumb {
+        background-color: $main_col1;
+        box-shadow: -1px 1px 5px 0px $main_col5-opacity;
+
+        }
+    .menu:hover::-webkit-scrollbar-thumb {
+        background-color: $main_col1;
+        box-shadow: -1px 1px 5px 0px $main_col5;
+
+        }
+
+    }
+@mixin logout-panel-nice(){
+    .logout-panel{
+        width:190px;
+        height:30px;
+        margin: 0px 20px 0 0px;
+        background: white;
+        display: none;
+    }
+    .item-log-panel{
+        margin: -10px 0 0 0;
+        font-size: $info_size;
+    }
+    .item-log-panel i{
+        margin: 10px 0 0 0;
+        font-size:  $icon_size_sm $i;
+    }
+    .item-log-panel .fa-power-off{
+        margin: 6px 0 0 0;
+    }
+}
+
+
+@mixin nav-panel(){
+    .panel-heading .nav {
+        margin:16px 0 0px 0;
+        background:$main_col-2;
+        height:38px;
+        border-bottom:1px solid $main_col5;
+       a{
+            font-weight:400;
+            color:$text_col;
+           padding: 15px 25px;
+            }
+        :not(.active) a{
+            background:$main_col-2;
+            color:$white;
+            height:38px;
+            padding-top:9px;
+            border-bottom:1px solid $main_col5;
+              font-size:$menu_size_sm;
+            }
+        :not(.active) a:hover{
+            border-bottom:1px solid $white;
+            }
+        .active a{
+            background:$white;
+            font-size:$menu_size_sm;
+            font-weight:400;
+            color:$text_col;
+            border-top:1px solid $divider;
+            border-right:1px solid $divider;
+            height:38px;
+            padding-top:9px;
+            }
+        }
+    }

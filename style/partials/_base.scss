@@ -1,0 +1,43 @@
+@import"var";
+@import"mixins";
+body{
+    background-color:$main_col-5;
+    color: $text_col;
+    font-family: Helvetica Neue ,Helvetica,Arial,sans-serif !important;
+     height: 100%;
+    }
+
+@include logout-panel-nice();
+ .work-area {
+     margin-left: 15px;
+     max-width: calc(100% - 263px);
+     padding-bottom: 0px;
+            padding-top: 10px;
+     td{
+            border:none $i;
+            font-size: $input_size_sm $i;
+            }
+        tr:hover{
+            background:$main_col-5;
+            color: $main_col5 $i;
+
+            font-size: $input_size $i;
+
+
+            }
+     td:hover{
+          font-weight: 500;
+
+     }}
+.panel{
+         box-shadow: $shadow-large;
+        border-radius: 3px $i;
+        }
+.panel-heading{
+     background: $white $i;
+    }
+.page-foot{display: none;}
+@keyframes open-menu-span {
+        0% {opacity:0; margin:0px 0 0 -5px; width:10px; }
+        100% {opacity:1; width:100%;}
+        }
