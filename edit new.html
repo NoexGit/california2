@@ -481,11 +481,32 @@ angular.module('currentUser', []).service('current_user', function(){
 </script>
 
 <script>
-     
+    if($(window).height()>768) {
     $('.dhtmlx-grid-container').css('height', $(window).height()-307+'px');
     $('.objbox').css('height', $(window).height()-330+'px');
      $('.menu').css('height', $(window).height()-170+'px');
+        
+        window.onresize=function(){
+         $('.dhtmlx-grid-container').css('height', $(window).height()-307+'px');
+    $('.objbox').css('height', $(window).height()-330+'px');
+     $('.menu').css('height', $(window).height()-170+'px');
    
+        
+    }
+   }
+    if($(window).height()<768) {
+    $('.dhtmlx-grid-container').css('height', $(window).height()-347+'px');
+    $('.objbox').css('height', $(window).height()-370+'px');
+     $('.menu').css('height', $(window).height()-170+'px');
+        
+        window.onresize=function(){
+         $('.dhtmlx-grid-container').css('height', $(window).height()-347+'px');
+    $('.objbox').css('height', $(window).height()-370+'px');
+     $('.menu').css('height', $(window).height()-170+'px');
+   
+        
+    }
+   }
     document.getElementById("noex-input-onclick1").onclick=function(){
         document.getElementById("noex-input-onclick1").innerHTML = "<input type='text' value='АЗС №23 с.Тереблече (КПП Порубне) (ІФ) Lv'/>";
     }
@@ -493,13 +514,7 @@ angular.module('currentUser', []).service('current_user', function(){
         document.getElementById("noex-input-onclick2").innerHTML = "<input type='text' value='Еней Компанія ТОВ/Львів Договір № 03/29/12/СТ від 31.12.14р.'/>";
     }
   
-    window.onresize=function(){
-         $('.dhtmlx-grid-container').css('height', $(window).height()-307+'px');
-    $('.objbox').css('height', $(window).height()-330+'px');
-     $('.menu').css('height', $(window).height()-170+'px');
-   
-        
-    }
+    
     
     
    
