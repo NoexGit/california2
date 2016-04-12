@@ -481,7 +481,7 @@ angular.module('currentUser', []).service('current_user', function(){
 </script>
 
 <script>
-    if($(window).height()>=648) {
+    if($(window).height()>=600) {
     $('.dhtmlx-grid-container').css('height', $(window).height()-307+'px');
     $('.objbox').css('height', $(window).height()-330+'px');
      $('.menu').css('height', $(window).height()-170+'px');
@@ -495,7 +495,7 @@ angular.module('currentUser', []).service('current_user', function(){
     }
    }
     //сильнее режет - мелкий экран
-    if($(window).height()<648) {
+    if($(window).height()<600) {
     $('.dhtmlx-grid-container').css('height', $(window).height()-347+'px');
     $('.objbox').css('height', $(window).height()-370+'px');
      $('.menu').css('height', $(window).height()-170+'px');
