@@ -483,7 +483,7 @@ angular.module('currentUser', []).service('current_user', function(){
 <script>
      
     $('.dhtmlx-grid-container').css('height', $(window).height()-307+'px');
-    $('.objbox').css('height', $(window).height()-260+'px');
+    $('.objbox').css('height', $(window).height()-330+'px');
      $('.menu').css('height', $(window).height()-170+'px');
    
     document.getElementById("noex-input-onclick1").onclick=function(){
@@ -502,6 +502,7 @@ angular.module('currentUser', []).service('current_user', function(){
     document.getElementById("edit-regular-order-items-table").onmouseover=function(){
         if(quit==false) {
           $('.dhtmlx-grid-container').css('height', $(window).height()-245+'px');
+               $('.objbox').css('height', $(window).height()-269+'px');
             $('#noex-info').removeClass('opened');
             $('#noex-info').addClass('hidden');
             $('#noex-info-angle').removeClass('fa-sort-up');
@@ -519,6 +520,7 @@ angular.module('currentUser', []).service('current_user', function(){
     document.getElementById("noex-info-btn").onclick=function(){
         if( $('#noex-info').hasClass('opened')) {
              $('.dhtmlx-grid-container').css('height', $(window).height()-245+'px');
+            $('.objbox').css('height', $(window).height()-269+'px');
             $('#noex-info').removeClass('opened');
             $('#noex-info').addClass('hidden');
             $('#noex-info-angle').removeClass('fa-sort-up');
@@ -527,6 +529,7 @@ angular.module('currentUser', []).service('current_user', function(){
         }
        else {
              $('.dhtmlx-grid-container').css('height', $(window).height()-307+'px');
+           $('.objbox').css('height', $(window).height()-330+'px');
         $('#noex-info').removeClass('hidden');
         $('#noex-info').addClass('opened');
         $('#noex-info-angle').removeClass('fa-sort-down');
