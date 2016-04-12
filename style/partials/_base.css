@@ -5,8 +5,7 @@
 body {
   background-color: #EDF1F4;
   color: #212121;
-  font-family: Helvetica Neue ,Helvetica,Arial,sans-serif !important;
-  height: 100%; }
+  font-family: Helvetica Neue ,Helvetica,Arial,sans-serif !important; }
 
 /* line 449, D:/xampp/htdocs/california3/style/partials/_mixins.scss */
 .logout-panel {
