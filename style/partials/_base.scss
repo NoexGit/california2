@@ -4,7 +4,7 @@ body{
     background-color:$main_col-5;
     color: $text_col;
     font-family: Helvetica Neue ,Helvetica,Arial,sans-serif !important;
-     height: 100%;
+
     }
 
 @include logout-panel-nice();

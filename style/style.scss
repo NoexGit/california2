@@ -4,7 +4,7 @@
 @import"partials/mixins";
 @import"partials/base";
 
-.page-panel-orders-edit{
+
 
     .panel{
         border-radius: 0px !important;
@@ -25,9 +25,7 @@
     .nav .btn{
         margin: 5px 0 0px 0;
     }
-    .btnright .btn{
-       peddind-left:2px;
-    }
+
     .panel-heading .nav {
     margin: 0px 0 0px 0;
     background: #90a4ae;
@@ -72,7 +70,7 @@
             background:$main_col1 $i;
             }
         }
-    }
+
 .page-panel-inventories{
     .panel-heading{
         padding-bottom: 12px;

@@ -311,7 +311,7 @@
     }
 @mixin left-panel-nice(){
     .left-panel {
-        min-width:240px;
+
         background-color:$main_col;
         box-shadow:$shadow-large;
 
@@ -325,7 +325,7 @@
 
             }
         .menu {
-            //max-height:78%;
+            max-height:78%;
             padding:0 10px 10px 10px;
             overflow-y:scroll;
 
@@ -355,7 +355,7 @@
                     }
                 ul li{
                     width:100%;
-
+background:$main_col-1 $i;
                     }
                 ul li:hover{
 
@@ -404,7 +404,7 @@
                 }
             }
         .menu{
-            overflow:visible;
+            overflow:visible $i;
             padding: 0px 7px 0px 7px;
 
             li {
