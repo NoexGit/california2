@@ -314,7 +314,7 @@
 
         background-color:$main_col;
         box-shadow:$shadow-large;
-
+        min-width: 90px $i;
         a{
             color:$white $i;
             font-size:$menu_size;
