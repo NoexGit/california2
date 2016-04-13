@@ -49,15 +49,19 @@ body {
     font-weight: 500; }
 
 /* line 32, D:/xampp/htdocs/california3/style/partials/_base.scss */
+#big_table {
+  max-width: 100%; }
+
+/* line 35, D:/xampp/htdocs/california3/style/partials/_base.scss */
 .panel {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: 3px !important; }
 
-/* line 36, D:/xampp/htdocs/california3/style/partials/_base.scss */
+/* line 39, D:/xampp/htdocs/california3/style/partials/_base.scss */
 .panel-heading {
   background: #FFFFFF !important; }
 
-/* line 39, D:/xampp/htdocs/california3/style/partials/_base.scss */
+/* line 42, D:/xampp/htdocs/california3/style/partials/_base.scss */
 .page-foot {
   display: none; }
 

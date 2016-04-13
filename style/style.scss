@@ -4,8 +4,13 @@
 @import"partials/mixins";
 @import"partials/base";
 
+#small_table_btn_up{
+     opacity: 0.5;
+}
+#small_table_btn_up:hover{
+    opacity: 0.8;
 
-
+}
     .panel{
         border-radius: 0px !important;
     }

@@ -29,6 +29,9 @@ body{
           font-weight: 500;
 
      }}
+#big_table{
+     max-width: 100% ;
+}
 .panel{
          box-shadow: $shadow-large;
         border-radius: 3px $i;

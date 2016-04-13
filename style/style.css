@@ -52,15 +52,19 @@ body {
     font-weight: 500; }
 
 /* line 32, D:/xampp/htdocs/california3/style/partials/_base.scss */
+#big_table {
+  max-width: 100%; }
+
+/* line 35, D:/xampp/htdocs/california3/style/partials/_base.scss */
 .panel {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: 3px !important; }
 
-/* line 36, D:/xampp/htdocs/california3/style/partials/_base.scss */
+/* line 39, D:/xampp/htdocs/california3/style/partials/_base.scss */
 .panel-heading {
   background: #FFFFFF !important; }
 
-/* line 39, D:/xampp/htdocs/california3/style/partials/_base.scss */
+/* line 42, D:/xampp/htdocs/california3/style/partials/_base.scss */
 .page-foot {
   display: none; }
 
@@ -73,28 +77,36 @@ body {
     opacity: 1;
     width: 100%; } }
 
-/* line 9, D:/xampp/htdocs/california3/style/style.scss */
+/* line 7, D:/xampp/htdocs/california3/style/style.scss */
+#small_table_btn_up {
+  opacity: 0.5; }
+
+/* line 10, D:/xampp/htdocs/california3/style/style.scss */
+#small_table_btn_up:hover {
+  opacity: 0.8; }
+
+/* line 14, D:/xampp/htdocs/california3/style/style.scss */
 .panel {
   border-radius: 0px !important; }
 
-/* line 12, D:/xampp/htdocs/california3/style/style.scss */
+/* line 17, D:/xampp/htdocs/california3/style/style.scss */
 .panel-heading {
   padding: 10px 0px;
   border-radius: 0px; }
 
-/* line 16, D:/xampp/htdocs/california3/style/style.scss */
+/* line 21, D:/xampp/htdocs/california3/style/style.scss */
 .panel-footer {
   padding: 4px 15px; }
 
-/* line 20, D:/xampp/htdocs/california3/style/style.scss */
+/* line 25, D:/xampp/htdocs/california3/style/style.scss */
 .panel-footer .btn {
   font-weight: 100; }
 
-/* line 25, D:/xampp/htdocs/california3/style/style.scss */
+/* line 30, D:/xampp/htdocs/california3/style/style.scss */
 .nav .btn {
   margin: 5px 0 0px 0; }
 
-/* line 29, D:/xampp/htdocs/california3/style/style.scss */
+/* line 34, D:/xampp/htdocs/california3/style/style.scss */
 .panel-heading .nav {
   margin: 0px 0 0px 0;
   background: #90a4ae;
@@ -102,15 +114,15 @@ body {
   text-transform: uppercase;
   border-radius: 0px; }
 
-/* line 39, D:/xampp/htdocs/california3/style/style.scss */
+/* line 44, D:/xampp/htdocs/california3/style/style.scss */
 .row {
   padding-right: 20px !important; }
 
-/* line 42, D:/xampp/htdocs/california3/style/style.scss */
+/* line 47, D:/xampp/htdocs/california3/style/style.scss */
 .btn-default .fa {
   color: #333333; }
 
-/* line 45, D:/xampp/htdocs/california3/style/style.scss */
+/* line 50, D:/xampp/htdocs/california3/style/style.scss */
 .btn i {
   margin-right: 0px; }
 
@@ -176,7 +188,7 @@ body {
   font-weight: 100 !important;
   font-size: 18px; }
 
-/* line 54, D:/xampp/htdocs/california3/style/style.scss */
+/* line 59, D:/xampp/htdocs/california3/style/style.scss */
 form {
   margin-bottom: 0px; }
 
@@ -311,23 +323,23 @@ H4 {
   box-shadow: -1px 1px 5px 0px #455A64; }
 
 /*  SELECT field  */
-/* line 69, D:/xampp/htdocs/california3/style/style.scss */
+/* line 74, D:/xampp/htdocs/california3/style/style.scss */
 .panel-footer .pagination .active a {
   background: #56707d !important; }
 
-/* line 75, D:/xampp/htdocs/california3/style/style.scss */
+/* line 80, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-inventories .panel-heading {
   padding-bottom: 12px;
   /*  SEARCH field  */
   /*  SELECT field  */ }
-  /* line 81, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 86, D:/xampp/htdocs/california3/style/style.scss */
   .page-panel-inventories .panel-heading .col-lg-7,
   .page-panel-inventories .panel-heading .col-lg-8,
   .page-panel-inventories .panel-heading .col-lg-9,
   .page-panel-inventories .panel-heading .col-lg-10,
   .page-panel-inventories .panel-heading .col-lg-11 {
     padding-right: 0px !important; }
-  /* line 88, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 93, D:/xampp/htdocs/california3/style/style.scss */
   .page-panel-inventories .panel-heading .col-lg-1,
   .page-panel-inventories .panel-heading .col-lg-2,
   .page-panel-inventories .panel-heading .col-lg-3,
@@ -335,7 +347,7 @@ H4 {
   .page-panel-inventories .panel-heading .col-lg-5 {
     padding-left: 0px !important;
     padding-right: 3px !important; }
-  /* line 94, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 99, D:/xampp/htdocs/california3/style/style.scss */
   .page-panel-inventories .panel-heading .col-md-12,
   .page-panel-inventories .panel-heading .col-sm-12,
   .page-panel-inventories .panel-heading .col-xs-12 {
@@ -349,26 +361,26 @@ H4 {
     margin: 10px 0 10px 40px !important;
     font-weight: 100 !important;
     font-size: 18px; }
-  /* line 98, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 103, D:/xampp/htdocs/california3/style/style.scss */
   .page-panel-inventories .panel-heading form {
     margin-bottom: 0px; }
-  /* line 102, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 107, D:/xampp/htdocs/california3/style/style.scss */
   .page-panel-inventories .panel-heading .form-group {
     margin: 25px 0 0px 0; }
-  /* line 106, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 111, D:/xampp/htdocs/california3/style/style.scss */
   .page-panel-inventories .panel-heading .form-group a,
   .page-panel-inventories .panel-heading .form-group input {
     border-bottom: 1px solid #FF9800;
     border-radius: 0; }
-  /* line 110, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 115, D:/xampp/htdocs/california3/style/style.scss */
   .page-panel-inventories .panel-heading .form-group .form-control {
     width: 130px;
     margin-left: 20px;
     font-size: 13px; }
-  /* line 115, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 120, D:/xampp/htdocs/california3/style/style.scss */
   .page-panel-inventories .panel-heading .form-group select {
     font-size: 13px; }
-  /* line 118, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 123, D:/xampp/htdocs/california3/style/style.scss */
   .page-panel-inventories .panel-heading .form-group input:focus {
     border-bottom: 1px solid #FF9800; }
   /* line 49, D:/xampp/htdocs/california3/style/partials/_mixins.scss */
@@ -385,13 +397,13 @@ H4 {
     color: transparent;
     margin: -27px 0 0 15px;
     font-size: 10px; }
-  /* line 124, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 129, D:/xampp/htdocs/california3/style/style.scss */
   .page-panel-inventories .panel-heading .dropdown-toggle {
     margin: 33px 15px 0 0px !important; }
-  /* line 128, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 133, D:/xampp/htdocs/california3/style/style.scss */
   .page-panel-inventories .panel-heading .dropdown-toggle:active {
     background: transparent !important; }
-  /* line 131, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 136, D:/xampp/htdocs/california3/style/style.scss */
   .page-panel-inventories .panel-heading .btn-success {
     background: transparent;
     border: none;
@@ -429,11 +441,11 @@ H4 {
         color: #FF9800;
         background: transparent;
         transition: .4s; }
-    /* line 135, D:/xampp/htdocs/california3/style/style.scss */
+    /* line 140, D:/xampp/htdocs/california3/style/style.scss */
     .page-panel-inventories .panel-heading .btn-success:hover i,
     .page-panel-inventories .panel-heading .btn-success:active i {
       color: #FF9800 !important; }
-  /* line 140, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 145, D:/xampp/htdocs/california3/style/style.scss */
   .page-panel-inventories .panel-heading .btn-primary {
     background: transparent;
     border: none;
@@ -471,7 +483,7 @@ H4 {
         color: #FF9800;
         background: transparent;
         transition: .4s; }
-  /* line 144, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 149, D:/xampp/htdocs/california3/style/style.scss */
   .page-panel-inventories .panel-heading .btn-header-main {
     /* - added class ----*/
     background: #FF9800 !important;
@@ -509,20 +521,20 @@ H4 {
       transition: .4s;
       color: #FFFFFF;
       opacity: 0.8; }
-    /* line 150, D:/xampp/htdocs/california3/style/style.scss */
+    /* line 155, D:/xampp/htdocs/california3/style/style.scss */
     .page-panel-inventories .panel-heading .btn-header-main .fa-caret-down {
       padding-left: 0px;
       padding-right: 0px;
       margin-top: -5px; }
 
-/* line 160, D:/xampp/htdocs/california3/style/style.scss */
+/* line 165, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-inventories .panel-footer .pagination .active a {
   background: #56707d !important; }
 
-/* line 165, D:/xampp/htdocs/california3/style/style.scss */
+/* line 170, D:/xampp/htdocs/california3/style/style.scss */
 .page-products-edit {
   min-width: 390px !important; }
-  /* line 167, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 172, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .panel.block .panel-heading {
     border-radius: 5px 5px 0 0; }
   /* line 292, D:/xampp/htdocs/california3/style/partials/_mixins.scss */
@@ -574,35 +586,35 @@ H4 {
       border-right: 1px solid #B6B6B6;
       height: 38px;
       padding-top: 9px; }
-  /* line 174, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 179, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .row {
     margin-left: 0px;
     margin-right: 0px;
     padding-bottom: 15px;
     border-bottom: 2px solid #EDF1F4; }
-  /* line 180, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 185, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .col-md-3 {
     padding-left: 0px;
     padding-right: 0px; }
-  /* line 184, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 189, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .col-md-2 {
     width: 5%; }
-  /* line 187, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 192, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .col-md-5 {
     width: 50%; }
-  /* line 190, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 195, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .col-md-4 {
     width: 40%; }
-  /* line 193, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 198, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .col-md-1 {
     width: 2%; }
-  /* line 196, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 201, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .wrapper-md {
     border: 2px solid #EDF1F4;
     margin: -25px 0px 0 10px;
     padding-bottom: 7px;
     padding-top: 4px; }
-  /* line 203, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 208, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .column-title {
     padding: 0px 0 10px 0px;
     width: 80%;
@@ -611,24 +623,24 @@ H4 {
     font-weight: 500;
     margin: 0 0 0 80px;
     color: #212121; }
-  /* line 212, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 217, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .btn {
     margin: -75px 10px 0px 0px;
     padding: 7px 9px 7px 9px; }
-  /* line 216, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 221, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .btn:hover {
     box-shadow: 1px 1px 5px 0 #4c646f;
     transition: 0.5s ease-in-out; }
-  /* line 220, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 225, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .btn i {
     font-size: 16px;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px; }
-  /* line 225, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 230, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .col-xs-12 {
     padding-bottom: 0px;
     padding-top: 12px; }
-  /* line 229, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 234, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .btn-success {
     background: #FF9800 !important;
     border: none;
@@ -661,19 +673,19 @@ H4 {
       transition: .4s;
       color: #FFFFFF;
       opacity: 0.8; }
-  /* line 232, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 237, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .btn-primary {
     background: transparent;
     border: none;
     color: #FFFFFF;
     font-size: 13px;
     font-weight: 400; }
-  /* line 239, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 244, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .btn-primary:active {
     background: transparent;
     border: none;
     color: #212121; }
-  /* line 244, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 249, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .boolean {
     font-size: 13px !important;
     padding-top: 5px;
@@ -774,15 +786,15 @@ H4 {
     .page-products-edit .edit_product .form-group:not(.product_top):not(.product_non):not(.product_out):not(.product_alt) textarea:focus {
       border: none;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
-  /* line 255, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 260, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .col-md-3 .readonly {
     opacity: 0.6; }
-  /* line 260, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 265, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .readonly div,
   .page-products-edit .edit_product .readonly label,
   .page-products-edit .edit_product .readonly input {
     cursor: default; }
-  /* line 273, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 278, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .product_additional_1 .col-sm-3,
   .page-products-edit .edit_product .product_additional_2 .col-sm-3,
   .page-products-edit .edit_product .product_additional_3 .col-sm-3,
@@ -794,7 +806,7 @@ H4 {
   .page-products-edit .edit_product .product_additional_9 .col-sm-3,
   .page-products-edit .edit_product .product_additional_10 .col-sm-3 {
     width: 25%; }
-  /* line 276, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 281, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .product_additional_1 .col-sm-9,
   .page-products-edit .edit_product .product_additional_2 .col-sm-9,
   .page-products-edit .edit_product .product_additional_3 .col-sm-9,
@@ -899,17 +911,17 @@ H4 {
     height: 38px;
     padding-top: 9px; }
 
-/* line 290, D:/xampp/htdocs/california3/style/style.scss */
+/* line 295, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-suppliers .panel-body {
   padding-top: 0px; }
 
-/* line 295, D:/xampp/htdocs/california3/style/style.scss */
+/* line 300, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-suppliers .tab-pane,
 .page-panel-suppliers .tab-content,
 .page-panel-suppliers form {
   padding: 0 0 0 0; }
 
-/* line 299, D:/xampp/htdocs/california3/style/style.scss */
+/* line 304, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-suppliers form {
   border-bottom: 2px solid #EDF1F4;
   border-bottom-left-radius: 0px;
@@ -962,7 +974,7 @@ H4 {
   cursor: pointer;
   border: none; }
 
-/* line 312, D:/xampp/htdocs/california3/style/style.scss */
+/* line 317, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-suppliers .checkbox-nice {
   margin: 3px 5px 0 15px !important; }
 
@@ -1011,7 +1023,7 @@ H4 {
   cursor: pointer;
   border: none; }
 
-/* line 320, D:/xampp/htdocs/california3/style/style.scss */
+/* line 325, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-suppliers .boolean .optional .col-sm-9 {
   width: 0px;
   height: 0px; }
@@ -1113,55 +1125,55 @@ H4 {
     border: none;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
-/* line 329, D:/xampp/htdocs/california3/style/style.scss */
+/* line 334, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-suppliers .form-group .supplier_mail_content {
   padding: 0px 0 0px 0px; }
 
-/* line 334, D:/xampp/htdocs/california3/style/style.scss */
+/* line 339, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-suppliers .form-group .col-sm-9 {
   width: 60%; }
 
-/* line 337, D:/xampp/htdocs/california3/style/style.scss */
+/* line 342, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-suppliers .form-group .col-xs-4 {
   padding-left: 0px; }
 
-/* line 342, D:/xampp/htdocs/california3/style/style.scss */
+/* line 347, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-suppliers .form-group .supplier_currency,
 .page-panel-suppliers .form-group .supplier_currency_manual_input,
 .page-panel-suppliers .form-group .supplier_currency_rate {
   padding: 0px 0px 0px 0px; }
-  /* line 346, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 351, D:/xampp/htdocs/california3/style/style.scss */
   .page-panel-suppliers .form-group .supplier_currency .checkbox,
   .page-panel-suppliers .form-group .supplier_currency_manual_input .checkbox,
   .page-panel-suppliers .form-group .supplier_currency_rate .checkbox {
     padding: 0px 0px 0px 0px; }
 
-/* line 353, D:/xampp/htdocs/california3/style/style.scss */
+/* line 358, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-suppliers .form-group label {
   margin-bottom: 8px !important; }
 
-/* line 360, D:/xampp/htdocs/california3/style/style.scss */
+/* line 365, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-suppliers .form-group .supplier_by_main_email,
 .page-panel-suppliers .form-group .supplier_by_scheduler_email,
 .page-panel-suppliers .form-group .supplier_by_main_email .checkbox,
 .page-panel-suppliers .form-group .supplier_by_scheduler_email .checkbox {
   padding: 0px 0 5px 20px; }
 
-/* line 363, D:/xampp/htdocs/california3/style/style.scss */
+/* line 368, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-suppliers .form-group .supplier_currency_rate {
   width: 300px;
   padding: 20px 10px 10px 10px; }
 
-/* line 367, D:/xampp/htdocs/california3/style/style.scss */
+/* line 372, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-suppliers .form-group .supplier_currency_manual_input {
   padding: 20px 0px 10px 60px; }
 
-/* line 371, D:/xampp/htdocs/california3/style/style.scss */
+/* line 376, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-suppliers .form-group .supplier_currency {
   width: 300px;
   padding: 20px 60px 10px 0px; }
 
-/* line 376, D:/xampp/htdocs/california3/style/style.scss */
+/* line 381, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-suppliers .btn {
   background: transparent;
   border: none;
@@ -1184,7 +1196,7 @@ H4 {
     background: #e7e7e7;
     color: #212121; }
 
-/* line 379, D:/xampp/htdocs/california3/style/style.scss */
+/* line 384, D:/xampp/htdocs/california3/style/style.scss */
 .page-panel-suppliers .btn-primary {
   background: #FF9800 !important;
   border: none;
@@ -1219,95 +1231,95 @@ H4 {
     opacity: 0.8; }
 
 @media (min-width: 1200px) {
-  /* line 386, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 391, D:/xampp/htdocs/california3/style/style.scss */
   .col-lg-offset-3 {
     margin-left: 5%; }
-  /* line 389, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 394, D:/xampp/htdocs/california3/style/style.scss */
   .col-sm-offset-3 {
     margin-left: 5%; } }
 
 @media (min-width: 1600px) {
-  /* line 394, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 399, D:/xampp/htdocs/california3/style/style.scss */
   .col-lg-offset-3 {
     margin-left: 5%; }
-  /* line 399, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 404, D:/xampp/htdocs/california3/style/style.scss */
   body .item-log-panel {
     font-size: 14px; }
-  /* line 402, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 407, D:/xampp/htdocs/california3/style/style.scss */
   body .item-log-panel i {
     font-size: 27px !important; }
-  /* line 406, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 411, D:/xampp/htdocs/california3/style/style.scss */
   body .left-panel a {
     font-size: 18px; }
-  /* line 413, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 418, D:/xampp/htdocs/california3/style/style.scss */
   body .left-panel .menu li ul,
   body .left-panel .menu li ul li,
   body .left-panel .menu li ul li a {
     font-size: 15px; }
-  /* line 417, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 422, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .panel-heading {
     padding-bottom: 20px; }
-    /* line 419, D:/xampp/htdocs/california3/style/style.scss */
+    /* line 424, D:/xampp/htdocs/california3/style/style.scss */
     .page-products-edit .panel-heading span {
       margin: 20px 0 0px 20px !important;
       font-size: 18px; }
-    /* line 423, D:/xampp/htdocs/california3/style/style.scss */
+    /* line 428, D:/xampp/htdocs/california3/style/style.scss */
     .page-products-edit .panel-heading .page-title h1 {
       margin: 49px 0 0px 20px !important;
       font-size: 23px; }
-  /* line 429, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 434, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .panel-heading .nav {
     margin: 30px 0 0px 0;
     height: 42px; }
-    /* line 433, D:/xampp/htdocs/california3/style/style.scss */
+    /* line 438, D:/xampp/htdocs/california3/style/style.scss */
     .page-products-edit .panel-heading .nav :not(.active) a {
       height: 42px;
       padding-top: 7px;
       font-size: 18px; }
-    /* line 438, D:/xampp/htdocs/california3/style/style.scss */
+    /* line 443, D:/xampp/htdocs/california3/style/style.scss */
     .page-products-edit .panel-heading .nav .active a {
       font-size: 18px;
       height: 42px;
       padding-top: 7px; }
-  /* line 445, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 450, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .form-group:not(.product_top):not(.product_non):not(.product_out):not(.product_alt) {
     padding: 16px 5px 1px 0px; }
-    /* line 447, D:/xampp/htdocs/california3/style/style.scss */
+    /* line 452, D:/xampp/htdocs/california3/style/style.scss */
     .page-products-edit .form-group:not(.product_top):not(.product_non):not(.product_out):not(.product_alt) .col-sm-8 {
       width: 60%; }
-    /* line 451, D:/xampp/htdocs/california3/style/style.scss */
+    /* line 456, D:/xampp/htdocs/california3/style/style.scss */
     .page-products-edit .form-group:not(.product_top):not(.product_non):not(.product_out):not(.product_alt) input, .page-products-edit .form-group:not(.product_top):not(.product_non):not(.product_out):not(.product_alt) select {
       font-size: 18px; }
-    /* line 454, D:/xampp/htdocs/california3/style/style.scss */
+    /* line 459, D:/xampp/htdocs/california3/style/style.scss */
     .page-products-edit .form-group:not(.product_top):not(.product_non):not(.product_out):not(.product_alt) label {
       font-size: 18px;
       padding: 4px 0px 0px 0px; }
-  /* line 460, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 465, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .btn {
     margin: -90px 10px 0px 0px; }
-  /* line 463, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 468, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .btn-success {
     font-size: 15px;
     margin: 10px 10px 0px 0px; }
-  /* line 467, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 472, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .btn-primary {
     font-size: 17px; }
-  /* line 470, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 475, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .boolean {
     font-size: 18px !important; }
-  /* line 475, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 480, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .boolean .optional .col-sm-9 {
     margin-right: 0px;
     margin-left: -19px; }
-  /* line 482, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 487, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .boolean .optional .col-sm-9:before {
     width: 15px;
     height: 15px; }
-  /* line 488, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 493, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .boolean .optional .col-sm-9:after {
     width: 15px;
     height: 15px; }
-  /* line 494, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 499, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .boolean .optional .col-sm-9:checked:before {
     top: 1px;
     height: 9px;
@@ -1316,34 +1328,34 @@ H4 {
     border-right-style: none; } }
 
 @media (max-width: 968px) {
-  /* line 504, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 509, D:/xampp/htdocs/california3/style/style.scss */
   .user-info {
     margin: 0 0 0 50px; }
-  /* line 508, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 513, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .col-md-1 {
     width: 0%; }
-  /* line 511, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 516, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .col-md-4 {
     width: 100%; }
-  /* line 515, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 520, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .col-md-5 {
     width: 100%; }
-  /* line 519, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 524, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .wrapper-md {
     margin: 20px 0 0 20px;
     max-width: calc(100% - 40px); } }
 
 @media (max-width: 768px) {
-  /* line 529, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 534, D:/xampp/htdocs/california3/style/style.scss */
   .work-area .page-title .btn-left-menu {
     margin-top: 0px; }
-  /* line 532, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 537, D:/xampp/htdocs/california3/style/style.scss */
   .work-area .page-title .btn-left-menu i {
     color: #90a4ae; }
-  /* line 535, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 540, D:/xampp/htdocs/california3/style/style.scss */
   .work-area .page-title .btn-left-menu i:hover {
     color: #78909c; }
-  /* line 538, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 543, D:/xampp/htdocs/california3/style/style.scss */
   .closed-panel .work-area {
     margin-left: -80px;
     max-width: calc(100% - 10px);
@@ -1352,42 +1364,42 @@ H4 {
     transition: left 0.5s linear;
     margin-right: 0;
     transition: all 0.4s; }
-  /* line 547, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 552, D:/xampp/htdocs/california3/style/style.scss */
   .open-left-menu-mob .work-area {
     margin-left: 20px;
     transition: all 0.4s;
     left: 0px !important;
     transition: all 0.4s; }
-  /* line 553, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 558, D:/xampp/htdocs/california3/style/style.scss */
   .form-group {
     padding: 15px 10px 0px 10px; }
-  /* line 558, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 563, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .wrapper-md {
     margin: 20px 0 0 20px;
     max-width: calc(100% - 40px); }
-  /* line 562, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 567, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .btn {
     margin: -30px 10px 0px 0px;
     padding: 7px 9px 7px 9px; }
-  /* line 566, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 571, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .btn-primary {
     color: #212121; }
-  /* line 571, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 576, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .form-group:not(.product_top):not(.product_non):not(.product_out):not(.product_alt) label {
     font-size: 11px;
     font-weight: 400;
     color: #727272;
     padding: 3px 0px 0px 0px; }
-  /* line 577, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 582, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .btn-success {
     margin: 0px 0px 0px 0px; }
-  /* line 584, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 589, D:/xampp/htdocs/california3/style/style.scss */
   .menu::-webkit-scrollbar {
     width: 5px !important;
     border-bottom: 2px solid #607D8B; } }
 
 @media (max-width: 375px) {
-  /* line 590, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 595, D:/xampp/htdocs/california3/style/style.scss */
   .work-area {
     margin-left: -240px;
     max-width: calc(100% - 20px);
@@ -1396,27 +1408,27 @@ H4 {
     transition: left 0.5s linear;
     margin-right: 0;
     transition: all 0.9s; }
-  /* line 599, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 604, D:/xampp/htdocs/california3/style/style.scss */
   .open-left-menu-mob .work-area {
     left: 0px !important;
     transition: all 0.4s; }
-  /* line 603, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 608, D:/xampp/htdocs/california3/style/style.scss */
   .form-group {
     padding: 15px 10px 0px 10px; }
-  /* line 607, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 612, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .wrapper-md {
     margin: 20px 0 0 20px;
     max-width: calc(100% - 40px); }
-  /* line 611, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 616, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .btn {
     margin: -30px 10px 0px 0px;
     padding: 7px 9px 7px 9px; }
-  /* line 615, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 620, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .btn-success {
     margin: 0px 0px 0px 0px; } }
 
 @media (max-width: 320px) {
-  /* line 623, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 628, D:/xampp/htdocs/california3/style/style.scss */
   .work-area {
     margin-left: -240px;
     max-width: calc(100% - 80px);
@@ -1425,23 +1437,23 @@ H4 {
     transition: left 0.5s linear;
     margin-right: 0;
     transition: all 0.4s; }
-  /* line 632, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 637, D:/xampp/htdocs/california3/style/style.scss */
   .open-left-menu-mob .work-area {
     left: 0px !important;
     transition: all 0.4s; }
-  /* line 636, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 641, D:/xampp/htdocs/california3/style/style.scss */
   .form-group {
     padding: 15px 10px 0px 10px; }
-  /* line 640, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 645, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .wrapper-md {
     margin: 20px 0 0 20px;
     max-width: calc(100% - 40px);
     transition: all 0.4s; }
-  /* line 645, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 650, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .btn {
     margin: -30px 10px 0px 0px;
     padding: 7px 9px 7px 9px; }
-  /* line 649, D:/xampp/htdocs/california3/style/style.scss */
+  /* line 654, D:/xampp/htdocs/california3/style/style.scss */
   .page-products-edit .edit_product .btn-success {
     margin: 10px 0px 0px 0px; } }
 
